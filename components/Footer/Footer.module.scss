@@ -1,0 +1,43 @@
+@import "styles/variables";
+.root {
+  display: none;
+  position: sticky;
+  width: 100%;
+  bottom: 0;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  background-color: #FFFFFF;
+  padding: 0 24px;
+  @media (max-width: $md4) {
+    display: block;
+  }
+}
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon {
+  a {
+    color: black;
+  }
+}
+.activeLink {
+  svg {
+    color: #e5a040;
+  }
+}
+.menuLink {
+  display: flex;
+  align-items: center;
+  color: black;
+  svg {
+    margin-right: 5px;
+    width: 25px;
+    height: 25px;
+  }
+}
+.miniAvatar {
+  width: 30px !important;
+  height: 30px !important;
+  margin-right: 5px;
+}

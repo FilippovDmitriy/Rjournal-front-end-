@@ -1,0 +1,76 @@
+.settings {
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 32px 20px;
+}
+.main {
+  padding: 15px 20px;
+  .linkBack {
+    display: flex;
+    align-items: center;
+    color: rgba(0,0,0,0.65);
+    margin-bottom: 24px;
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+.changePassword {
+  display: inline-block;
+  margin-top: 8px;
+  color: rgb(55, 102, 169);
+}
+.formSection {
+  &:last-child {
+    border-top: 1px solid rgba(0,0,0,0.1);;
+    margin: 0 -20px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    position: sticky;
+    bottom: 0;
+  }
+}
+.formSection + .formSection {
+  margin-top: 24px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tabsContainer {
+  width: 100%;
+  padding: 15px 20px 10px;
+  margin-bottom: 16px;
+}
+.devtools {
+  color: rgba(0,0,0,0.65);
+  line-height: 24px;
+}
+
+.tabs {
+  margin-top: 5px;
+}
+.tab {
+  display: flex;
+  align-items: center;
+  margin: 0 -20px;
+  padding: 0 20px;
+  cursor: pointer;
+  svg {
+    margin-right: 10px;
+  }
+  span {
+    padding: 12px 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+  &:last-child {
+    span {
+      border-bottom: 0;
+    }
+  }
+}

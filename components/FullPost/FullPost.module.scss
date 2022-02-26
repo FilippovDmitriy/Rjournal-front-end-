@@ -1,0 +1,114 @@
+@import "styles/variables";
+.wrapper {
+  padding: 30px 0;
+}
+.top {
+  p {
+    margin: 15px 0;
+  }
+}
+.container {
+  width: 721px;
+  padding: 0 21px;
+  margin: 0 auto;
+  @media (max-width: $md1) {
+    width: 641px;
+  }
+  @media (max-width: $md4) {
+    width: auto;
+    max-width: 641px;
+  }
+}
+.content {
+  margin: 0 auto;
+  p {
+    margin: 15px auto;
+  }
+}
+.imageContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  .container {
+    span {
+      font-size: 15px;
+      line-height: 21.75px;
+      color: #000000;
+      display: inline-block;
+      margin-top: 15px;
+    }
+  }
+  .image {
+    width: 100%;
+  }
+}
+.userContainer {
+  display: flex;
+  @media (max-width: $md4) {
+    flex-direction: column;
+  }
+}
+.user {
+  width: 100%;
+  display: flex;
+  a {
+    display: flex;
+  }
+}
+.userInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 12px;
+  .userName {
+    display: flex;
+    align-items: center;
+    span {
+      margin-left: 12px;
+      color: #2ea83a;
+      font-weight: 500;
+    }
+  }
+  .userDescription {
+    width: 380px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+.buttons {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 18px;
+  @media (max-width: $md4) {
+    margin-top: 15px;
+    margin-left: 0;
+  }
+  button {
+    min-width: 0;
+    padding-left: 12px;
+    padding-right: 12px;
+    max-height: 38px;
+    &:first-child {
+      p {
+        display: none;
+      }
+      @media (max-width: $md4) {
+        p {
+          display: inline-block;
+          margin: 0 auto;
+        }
+      }
+    }
+    @media (max-width: $md4) {
+      flex: 0 0 48%;
+      span {
+        margin: 0 auto;
+      }
+    }
+  }
+  button + button {
+    margin-left: 18px;
+  }
+}

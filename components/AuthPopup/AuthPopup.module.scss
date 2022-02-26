@@ -1,0 +1,86 @@
+.headerAuth {
+  display: flex;
+  align-items: center;
+}
+.authButton {
+  svg {
+    margin-right: 12px;
+  }
+  &:hover {
+    color: #e5a040;
+    background-color: transparent !important;
+  }
+}
+.back {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  margin: 16px 24px;
+  color: #808080;
+  svg {
+    margin-right: 10px;
+  }
+}
+.content {
+  button {
+    height: 48px;
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.fullButtons {
+  margin-bottom: 15px;
+  button {
+    position: relative;
+    svg {
+      position: absolute;
+      left: 15px;
+    }
+  }
+  button + button {
+    margin-top: 15px;
+  }
+}
+
+.miniButtons {
+  display: flex;
+  button {
+    width: 100%;
+  }
+  button + button {
+    margin-left: 15px;
+  }
+}
+.already {
+  display: flex;
+  margin-top: 16px;
+  p {
+    margin-right: 5px;
+    color: #595959;
+  }
+}
+.links {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  span + span {
+    margin-top: 1rem;
+  }
+}
+.link {
+  border-bottom: 0;
+  &:hover {
+    border-bottom: 0;
+  }
+}
+
+.term {
+  display: block;
+  margin-top: 82px;
+  margin-bottom: 16px;
+  min-height: 22px;
+}

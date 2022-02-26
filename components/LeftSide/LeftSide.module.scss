@@ -1,0 +1,29 @@
+.menu {
+  position: sticky;
+  width: 200px;
+  top: 84px;
+  left: 0;
+  margin: 12px 10px;
+  button {
+    width: 100%;
+    padding: 10px 13px;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    text-transform: inherit;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 3px;
+    svg {
+      margin-right: 10px;
+    }
+  }
+}
+.activeLink {
+  button {
+    box-shadow: none;
+  }
+  svg {
+    color: #e5a040;
+  }
+}

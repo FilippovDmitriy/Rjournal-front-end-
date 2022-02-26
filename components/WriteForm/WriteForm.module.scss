@@ -1,0 +1,29 @@
+.main {
+  background-color: #FFFFFF;
+  min-height: 100vh;
+  .container {
+    margin: 0 auto;
+    max-width: 721px;
+    padding: 0 21px;
+    width: 100%;
+    min-height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+  }
+  .titleField {
+    font-size: 36px;
+    font-weight: 500;
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
+  .editor {
+    height: calc(100% - 5px);
+  }
+  .button {
+    align-self: flex-start;
+    margin-top: auto;
+    margin-bottom: 20px;
+  }
+}

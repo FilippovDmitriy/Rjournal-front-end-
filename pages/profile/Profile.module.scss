@@ -1,0 +1,236 @@
+@import "styles/variables";
+.profileMain {
+  display: grid;
+  grid-template-areas: "profileInfo profileInfo"
+                       "tabItem subscribers"
+                       "tabItem subscriptions";
+  grid-template-columns: 2.1fr 1fr;
+  grid-template-rows: 1fr 95px auto;
+  grid-gap: 32px 20px;
+  @media (max-width: $md2) {
+    grid-template-columns: 1fr;
+    grid-template-areas: "profileInfo profileInfo"
+                         "tabItem tabItem"
+                         "tabItem tabItem";
+  }
+}
+.profileInfo {
+  grid-area: profileInfo;
+  padding: 24px 20px 0;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    @media (max-width: $md5) {
+      flex-direction: column;
+    }
+  }
+  &__avatar {
+    width: 112px !important;
+    height: 112px !important;
+    font-size: 50px !important;
+  }
+  &__buttons {
+    display: flex;
+    align-items: stretch;
+    @media (max-width: $md5) {
+      margin-top: 15px;
+      flex-direction: row-reverse;
+    }
+    button {
+      height: 100%;
+    }
+    button:first-child {
+      min-width: 0;
+      padding: 6px 12px;
+    }
+    a:last-child {
+      svg {
+        margin-right: 12px;
+      }
+    }
+    a + a {
+      margin-left: 8px;
+      @media (max-width: $md5) {
+        margin-left: 0;
+        margin-right: 8px;
+      }
+    }
+  }
+  &__name {
+    margin-top: 8px !important;
+    font-size: 36px !important;
+    font-weight: 700 !important;
+    a {
+      color: black;
+    }
+  }
+  &__change {
+    margin-top: 4px !important;
+    color: #3766a9;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  &__date {
+    margin-top: 20px !important;
+    margin-bottom: 8px !important;
+    font-size: 16px !important;
+    line-height: 24px;
+    color: #000000;
+  }
+}
+.tabItem {
+  grid-area: tabItem;
+  padding: 0 !important;
+}
+.newRecord {
+  padding: 12px 20px;
+  margin-bottom: 32px;
+  &__avatar {
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 50% !important;
+  }
+  &__top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  &__record {
+    margin-left: 10px;
+    width: 100%;
+    color: #595959;
+    line-height: 30px;
+    cursor: text;
+    user-select: none;
+  }
+  &__list {
+    ul {
+      display: flex;
+      li {
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        border-radius: 25px;
+        padding: 5px 10px 5px 12px;
+        background-color: #f4f7f9;
+        font-size: 14px;
+        user-select: none;
+        a {
+          display: flex;
+          align-items: center;
+          color: #595959;
+        }
+        &:first-child {
+          svg {
+            path {
+              fill: #0a1;
+            }
+          }
+        }
+        &:nth-child(2) {
+          svg {
+            path {
+              fill: #27e;
+            }
+          }
+        }
+        svg {
+          width: 15px;
+          height: 15px;
+          margin-right: 6px;
+        }
+      }
+      li + li {
+        margin-left: 8px;
+      }
+    }
+  }
+}
+.createRecord {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 20px;
+  &__text {
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+}
+.subscribers {
+  grid-area: subscribers;
+  padding: 15px 20px;
+  @media (max-width: $md2) {
+    display: none;
+  }
+  h5 {
+    margin-bottom: 16px;
+  }
+  &__void {
+    margin-top: 16px;
+    color: rgba(0,0,0,0.65);
+  }
+}
+.subscriptions {
+  height: 288px;
+  padding: 15px 20px;
+  grid-area: subscriptions;
+  @media (max-width: $md2) {
+    display: none;
+  }
+  h5 {
+    margin-bottom: 16px;
+    span {
+      color: #595959;
+    }
+  }
+  &__void {
+    margin-top: 16px;
+    color: rgba(0,0,0,0.65);
+  }
+}
+.comment {
+  padding: 9px 20px;
+  margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  &__title {
+    color: black;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 700;
+    &:hover {
+      color: #3766a9;
+    }
+  }
+  &__top {
+    margin: 8px 0 7px;
+    display: flex;
+    align-items: center;
+  }
+  &__ava {
+    width: 16px !important;
+    height: 16px !important;
+    border-radius: 2px !important;
+    font-size: 12px !important;
+    margin-right: 8px;
+  }
+  &__name {
+    color: #000;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 500;
+    margin-right: 13px;
+  }
+  &__created {
+    color: #595959;
+    text-transform: lowercase;
+    font-size: 12px;
+  }
+  &__text {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+}

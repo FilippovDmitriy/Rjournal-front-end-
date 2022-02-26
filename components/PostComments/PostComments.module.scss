@@ -1,0 +1,23 @@
+@import "styles/variables";
+.container {
+  width: 721px;
+  padding: 0 21px;
+  margin: 0 auto 30px;
+  @media (max-width: $md1) {
+    width: 641px;
+  }
+  @media (max-width: $md4) {
+    width: auto;
+    max-width: 641px;
+  }
+}
+
+.postComments {
+  margin-top: 28px;
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+.countComments {
+  font-weight: 700 !important;
+  margin-bottom: 20px !important;
+}

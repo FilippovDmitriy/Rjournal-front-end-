@@ -1,0 +1,25 @@
+.postAction {
+  padding: 20px 0 25px;
+}
+.icon {
+  padding: 0 !important;
+  a {
+    display: flex;
+    align-items: center;
+    color: #757575;
+  }
+  &:hover {
+    p {
+      color: #4683d9;
+    }
+    svg {
+      fill: #4683d9;
+    }
+  }
+  p {
+    margin-left: 5px;
+  }
+  &+& {
+    margin-left: 40px;
+  }
+}

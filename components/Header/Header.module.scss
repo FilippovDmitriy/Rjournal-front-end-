@@ -1,0 +1,68 @@
+@import "styles/variables";
+.root {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFF4E2 !important;
+  padding: 9px 28px 9px 8px;
+  border-radius: 0 !important;
+}
+
+.headerMain {
+  display: flex;
+  align-items: center;
+  @media (max-width: $md2) {
+    width: 100%;
+  }
+}
+.headerIcons {
+  display: flex;
+  align-items: center;
+}
+.postActions {
+  display: flex;
+  align-items: center;
+  @media (max-width: $md2) {
+    margin: 0 auto;
+  }
+  @media (max-width: $md4) {
+    margin: 0 0 0 auto;
+  }
+  .searchBoxContainer {
+    @media (max-width: $md4) {
+      display: none;
+    }
+  }
+}
+.searchIcon {
+  color: black !important;
+}
+.button {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: inherit;
+  border-radius: 8px;
+  letter-spacing: 0 !important;
+  .buttonIcon {
+    display: none;
+  }
+  @media (max-width: $md2) {
+    .buttonIcon {
+      display: block;
+    }
+    p {
+      display: none;
+    }
+    min-width: 40px !important;
+    min-height: 40px !important;
+    padding: 6px 8px !important;
+  }
+}
+.authContainer {
+  display: block;
+  @media (max-width: $md4) {
+    display: none;
+  }
+}

@@ -1,0 +1,58 @@
+@import "styles/variables";
+.searchBox {
+  position: relative;
+  margin-right: 12px;
+  width: 320px;
+  height: 40px;
+  @media (max-width: $md2) {
+    width: 240px;
+  }
+  @media (max-width: $md4) {
+    background-color: #fff4e2;
+    width: 100%;
+    height: 60px;
+    padding: 9px 15px;
+    position: fixed;
+    top: 66px;
+    left: 0;
+  }
+  input {
+    font-size: 16px;
+    padding: 0 11px 0 37px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.05);
+    border-radius: 8px;
+    border: 1px solid transparent;
+    transition: .1s;
+    &:hover,
+    &:focus {
+      border-color: darken(#fff4e2, 15%);
+      box-shadow: 0 0 0 3px rgb(229 160 64/12%);
+      background-color: #FFFFFF;
+    }
+  }
+  svg {
+    top: 9px;
+    left: 8px;
+    position: absolute;
+    @media (max-width: $md4) {
+      left: 21px;
+      top: 18px;
+    }
+  }
+}
+.searchPopup {
+  margin-top: 10px;
+  &.disable {
+    display: none;
+  }
+  a {
+    color: #000000;
+  }
+}
+.searchItem {
+  &:hover {
+    background-color: rgba(0,0,0,0.05);
+  }
+}

@@ -1,0 +1,41 @@
+.header {
+  padding: 20px;
+  border-radius: 0 !important;
+  &>p {
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 21px;
+  }
+}
+.main {
+  margin-top: 15px;
+  border-radius: 0 !important;
+}
+.tableCellMain {
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  color: #000000 !important;
+}
+.tableSubsite {
+  display: flex !important;
+  align-items: center;
+  span {
+    font-size: 13px;
+    line-height: 1.5em;
+    margin-right: 12px;
+  }
+  p {
+    margin-left: 8px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
+.ava {
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 0 !important;
+}
+.tableRating {
+  font-size: 13px;
+  line-height: 1.5em;
+}

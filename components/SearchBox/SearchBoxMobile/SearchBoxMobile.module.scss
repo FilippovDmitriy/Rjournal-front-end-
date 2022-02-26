@@ -1,0 +1,13 @@
+@import "styles/variables";
+.root {
+  display: none;
+  @media (max-width: $md4) {
+    display: block;
+  }
+}
+.searchIcon {
+  color: black !important;
+  &.active {
+    color: #e5a040 !important;
+  }
+}

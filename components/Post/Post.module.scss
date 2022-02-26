@@ -1,0 +1,36 @@
+.title {
+  padding: 9px 20px 7px !important;
+  color: #000000;
+}
+.moreIcon {
+  position: relative;
+  z-index: 5;
+  svg {
+    cursor: pointer;
+  }
+}
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  svg {
+    margin: 0 20px;
+  }
+}
+.text {
+  margin: 15px 20px !important;
+  font-size: 16px !important;
+}
+.paper {
+  margin-bottom: 30px;
+  border-radius: 8px !important;
+}
+.menuLink {
+  color: #000;
+}
+.bottomBlock {
+  padding: 0 20px;
+}
+.descriptionLink {
+  display: block;
+}
